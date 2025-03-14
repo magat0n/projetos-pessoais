@@ -1,0 +1,179 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Cor de fundo clara */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #5D3FD3; /* Cor vibrante */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos de seção */
+h2 {
+    color: #5D3FD3;
+    font-size: 2em;
+    margin-top: 30px;
+    padding-left: 10px;
+    border-bottom: 2px solid #5D3FD3;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+/* Container centralizando o conteúdo */
+/* Container centralizando o conteúdo */
+#container {
+    display: flex; /* Usando flexbox para alinhamento */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+     /* Define altura de 100% da tela para centralização total */
+}
+
+/* Estilo para a imagem de perfil */
+.perfil {
+    width: 250px; /* Tamanho da largura da imagem */
+    height: 250px; /* Tamanho da altura da imagem igual à largura */
+    border-radius: 50%; /* Torna a imagem 100% redonda */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+    box-shadow: 0 4px 10px rgb(30, 5, 255); /* Adicionando sombra suave para destaque */
+}
+
+
+
+/* Parágrafos */
+p {
+    font-size: 1.1em;
+    padding: 15px 20px;
+    margin: 20px 0;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover para parágrafos */
+p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Lista de projetos e habilidades */
+ul {
+    margin: 0 20px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover para os itens da lista */
+ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+    color: #5D3FD3;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Efeito de hover para links */
+a:hover {
+    text-decoration: underline;
+    color: #3a1e97;
+}
+
+/* Botões */
+button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background-color: #5D3FD3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Efeito de hover para o botão */
+button:hover {
+    background-color: #4b2a99;
+    transform: scale(1.05);
+}
+
+/* Formatação para a seção de Contato */
+#contato {
+    background-color: #fff;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px #5D3FD3;
+}
+
+#contato p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Adicionando o efeito de fade-in */
+.fade {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

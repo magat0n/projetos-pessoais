@@ -1,0 +1,120 @@
+/* Estilos Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* Gradiente suave de fundo */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container do Jogo */
+.game-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    width: 380px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Tabela do Jogo */
+table {
+    width: 100%;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Exibição da Palavra */
+#word-display {
+    font-size: 36px;
+    letter-spacing: 15px;
+    font-weight: bold;
+    color: #27ae60; /* Cor mais vibrante */
+    margin-bottom: 20px;
+}
+
+/* Exibição do Tempo e Pontuação */
+#timer, #score {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2980b9;
+    margin: 10px 0;
+}
+
+/* Container de Letras */
+#letters {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Botões de Letra */
+.letter-btn {
+    padding: 15px;
+    font-size: 24px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Efeito de Hover nas Letras */
+.letter-btn:hover {
+    background-color: #3498db;
+    transform: scale(1.1); /* Aumento suave */
+}
+
+/* Efeito de Botão Desabilitado */
+.letter-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Mensagem de Vitória/Derrota */
+#message {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Botão de Reiniciar Jogo */
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de Hover no Botão de Reiniciar */
+button:hover {
+    background-color: #27ae60;
+    transform: scale(1.1);
+}

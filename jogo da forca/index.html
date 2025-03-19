@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo da Forca</h1>
+        <table>
+            <tr>
+                <td>Tempo restante: <span id="timer">60</span> segundos</td>
+                <td>Pontuação: <span id="score">0</span></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="word-display">_ _ _ _ _</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="letters"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="message"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="resetGame()">Reiniciar Jogo</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

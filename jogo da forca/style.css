@@ -1,8 +1,8 @@
 /* Estilos Globais */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* Gradiente suave de fundo */
-    height: 100vh;
+    background: linear-gradient(135deg, #de0000, #00d9ff); /* Gradiente suave de fundo */
+    height: 120vh;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -13,9 +13,9 @@ body {
 .game-container {
     background: #fff;
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
-    width: 380px;
+    width: 500px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -44,9 +44,9 @@ td {
 /* Exibição da Palavra */
 #word-display {
     font-size: 36px;
-    letter-spacing: 15px;
+    letter-spacing: 1px;
     font-weight: bold;
-    color: #27ae60; /* Cor mais vibrante */
+    color: #009aff; /* Cor mais vibrante */
     margin-bottom: 20px;
 }
 
@@ -54,7 +54,7 @@ td {
 #timer, #score {
     font-size: 20px;
     font-weight: 600;
-    color: #2980b9;
+    color: #009aff;
     margin: 10px 0;
 }
 
@@ -71,7 +71,7 @@ td {
 .letter-btn {
     padding: 15px;
     font-size: 24px;
-    background-color: #2980b9;
+    background-color: #009aff;
     color: white;
     border: none;
     border-radius: 50%;

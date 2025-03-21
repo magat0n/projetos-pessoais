@@ -1,6 +1,6 @@
 const words = [
     "javascript", "html", "css", "python", "programacao",
-    "desenvolvimento", "frontend", "backend", "algoritmo", "sistema",
+    "frontend", "backend", "algoritmo", "sistema",
     "computador", "navegador", "internet", "rede", "tecnologia",
     "software", "hardware", "debug", "codificacao", "framework","software","hardware",
     "algoritmo","rede","github","git","linux","ios","sansung","motorola","nokia","apple",

@@ -1,8 +1,10 @@
 const words = [
-    "javascript", "html", "css", "forca", "programacao",
-    "desenvolvimento", "front-end", "back-end", "algoritmo", "sistema",
+    "javascript", "html", "css", "python", "programacao",
+    "desenvolvimento", "frontend", "backend", "algoritmo", "sistema",
     "computador", "navegador", "internet", "rede", "tecnologia",
-    "software", "hardware", "debug", "codificacao", "framework"
+    "software", "hardware", "debug", "codificacao", "framework","software","hardware",
+    "algoritmo","rede","github","git","linux","ios","sansung","motorola","nokia","apple",
+    "microsoft","windows","android","google","yahoo","youtube","facebook","instagram","whatsapp",    
 ];
 
 let chosenWord, displayWord, attempts, score, timer;
@@ -27,12 +29,17 @@ function startGame() {
         let btn = document.createElement("button");
         btn.textContent = String.fromCharCode(i);
         btn.classList.add("letter-btn");
-        btn.onclick = () => guessLetter(btn.textContent);
+        btn.onclick = function () {
+            guessLetter(this.textContent, this);
+        };
         document.getElementById("letters").appendChild(btn);
     }
 }
 
-function guessLetter(letter) {
+function guessLetter(letter, button) {
+    button.disabled = true;  // Desabilita o botão
+    button.style.backgroundColor = "#bdc3c7";  // Muda a cor para indicar que foi usado
+
     if (!chosenWord.includes(letter)) {
         attempts--;
     } else {

@@ -1,7 +1,7 @@
 /* Estilos Globais */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #de0000, #00d9ff); /* Gradiente suave de fundo */
+    background: linear-gradient(135deg, #ff0404, #0400ff); /* Gradiente suave de fundo */
     height: 120vh;
     margin: 0;
     display: flex;
@@ -117,4 +117,100 @@ button {
 button:hover {
     background-color: #27ae60;
     transform: scale(1.1);
+}
+
+#start-screen {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#start-screen input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+}
+
+#scores-container {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#toggle-scores {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+#toggle-scores:hover {
+    background-color: #2980b9;
+}
+
+#scores-content {
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+#scores-content.show {
+    display: block;
+    animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#scores-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#scores-table th, #scores-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#scores-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+#scores-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#game-screen {
+    width: 100%;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
 }

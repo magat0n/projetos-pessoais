@@ -4,33 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Forca</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
         <h1>Jogo da Forca</h1>
-        <table>
-            <tr>
-                <td>Tempo restante: <span id="timer">60</span> segundos</td>
-                <td>Pontuação: <span id="score">0</span></td>
-            </tr>
-            <tr>
-                <td colspan="2" id="word-display">_ _ _ _ _</td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div id="letters"></div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" id="message"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button onclick="resetGame()">Reiniciar Jogo</button>
-                </td>
-            </tr>
-        </table>
+        <div id="start-screen">
+            <input type="text" id="player-name" placeholder="Digite seu nome">
+            <button onclick="startGame()">Iniciar Jogo</button>
+        </div>
+        <div id="game-screen" style="display: none;">
+            <table>
+                <tr>
+                    <td>Tempo restante: <span id="timer">60</span> segundos</td>
+                    <td>Pontuação: <span id="score">0</span></td>
+                </tr>
+                <tr>
+                    <td>Tentativas restantes: <span id="attempts">5</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="word-display">_ _ _ _ _</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="letters"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="message"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="nextWord()">Próxima Palavra</button>
+                        <button onclick="resetGame()">Reiniciar Jogo</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="scores-container">
+            <button id="toggle-scores" onclick="toggleScores()">Mostrar Pontuações</button>
+            <div id="scores-content" style="display: none;">
+                <h2>Melhores Pontuações</h2>
+                <table id="scores-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Pontuação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scores-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

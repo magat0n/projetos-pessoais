@@ -12,6 +12,7 @@
         <div id="start-screen">
             <input type="text" id="player-name" placeholder="Digite seu nome">
             <button onclick="startGame()">Iniciar Jogo</button>
+            <div id="alert-message"></div>
         </div>
         <div id="game-screen" style="display: none;">
             <table>
@@ -20,8 +21,15 @@
                     <td>Pontuação: <span id="score">0</span></td>
                 </tr>
                 <tr>
-                    <td>Tentativas restantes: <span id="attempts">5</span></td>
+                    <td>Tentativas restantes: <span id="attempts">6</span></td>
                     <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="hangman-drawing">
+                            <canvas id="hangman-canvas" width="200" height="200"></canvas>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2" id="word-display">_ _ _ _ _</td>

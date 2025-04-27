@@ -17,7 +17,7 @@ body {
 
 .container {
     width: 80%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
@@ -171,7 +171,7 @@ body {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
-    color: #fff;
+    color: #6b63fff1;
 }
 
 @media screen and (max-width: 1330px) {

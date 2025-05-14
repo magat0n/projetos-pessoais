@@ -34,7 +34,7 @@ const words = [
     "commit", "branch", "merge", "pull", "push", "fork", "clone", "issue", "release", "tag",
     
     // Novas Tecnologias
-    "blockchain", "bitcoin", "ethereum", "nft", "metaverso", "realidade", "virtual", "aumentada", "inteligencia", "artificial",
+    "blockchain", "bitcoin", "ethereum", "nft", "metaverso", "inteligencia", "artificial",
     "machine", "learning", "chatbot", "biometria", "quantum", "drone", "robo", "sensor", "iot", "wearable"
 ];
 
